@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="197.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Me-ar-MBv" userLabel="backView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="197.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKh-me-OX9">
+                                <rect key="frame" x="0.0" y="-80" width="320" height="297.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MKh-me-OX9" firstAttribute="top" secondItem="6Me-ar-MBv" secondAttribute="top" constant="-80" id="0KF-So-3cv"/>
+                            <constraint firstAttribute="bottom" secondItem="MKh-me-OX9" secondAttribute="bottom" constant="-20" id="TwT-7z-g2h"/>
+                            <constraint firstAttribute="trailing" secondItem="MKh-me-OX9" secondAttribute="trailing" id="YhG-MI-3tD"/>
+                            <constraint firstItem="MKh-me-OX9" firstAttribute="leading" secondItem="6Me-ar-MBv" secondAttribute="leading" id="kBL-Td-W0C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Me-ar-MBv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HP4-DQ-zvN"/>
+                    <constraint firstAttribute="trailing" secondItem="6Me-ar-MBv" secondAttribute="trailing" id="fvK-4m-UjC"/>
+                    <constraint firstAttribute="bottom" secondItem="6Me-ar-MBv" secondAttribute="bottom" id="gK3-ki-RbS"/>
+                    <constraint firstItem="6Me-ar-MBv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ovi-Z5-Giz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="MKh-me-OX9" id="2PM-ET-sQe"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="131"/>
+        </tableViewCell>
+    </objects>
+</document>
